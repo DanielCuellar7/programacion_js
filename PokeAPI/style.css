@@ -1,0 +1,14 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card{
+    margin: 4px;
+    background-color:darkgray;
+}
+
+.imgPoke{
+    background-color: beige;
+    
+}

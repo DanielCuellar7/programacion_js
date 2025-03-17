@@ -1,0 +1,20 @@
+*{
+    margin: 0cm;
+    padding: 0cm;
+    box-sizing: border-box;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+
+}
+
+div > .title{
+    color:black; 
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    margin-top: 40px;
+}
