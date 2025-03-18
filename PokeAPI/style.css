@@ -1,14 +1,43 @@
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.title{
+    text-align: center;
+}
+
 .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    row-gap: 2rem;
+    width: 70%;
+    margin: auto;
 }
 
 .card{
-    margin: 4px;
-    background-color:darkgray;
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 1rem;
+    border-color: black;
+    border-width: 1px 2px 3px;
+    border-style: solid solid solid;
 }
 
 .imgPoke{
-    background-color: beige;
-    
+    background-color:darkslategray;  
+    border-top-left-radius: 1rem;  
+    border-top-right-radius: 1rem;
+}
+
+.typeContent{
+   display: flex;
+   justify-content: space-evenly;
 }
