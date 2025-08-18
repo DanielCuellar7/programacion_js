@@ -1,12 +1,20 @@
 const arrDiv = ["COP", "EUR", "USD"];
 const arrDiv2 = ["COP", "EUR", "USD"];
 
+let result;
+const divresult = document.getElementById("result");
+function convertir(){
+    divresult.innerHTML = ""; // Limpia el resultado anterior
+    let rta = document.createElement('h3');
+    rta.textContent = result;
+    divresult.appendChild(rta);
+}
 
 function convertidorDivisas(){
     const divDe = document.getElementById("De");
     const divA = document.getElementById("A");
-    let selectedValueDe = ""
-    let selectedValueA= ""
+    const importe = document.getElementById("cantidad");
+   
 
     const options = arrDiv.map(opt => {
         let div1 = document.createElement('option'); //creo la etiqueta para HTML
@@ -21,22 +29,41 @@ function convertidorDivisas(){
         div2.textContent = opt2;
         return divA.appendChild(div2);
     })
-
-    divA.addEventListener('change', function(e) {
-        // Código a ejecutar cuando se haga clic en el elemento
-       selectedValueA = e?.target?.value
-
-       console.log(selectedValueA)
-      });
-
-    divDe.addEventListener('change', function(e) {
-        // Código a ejecutar cuando se haga clic en el elemento
-        selectedValueDe = e?.target?.value
-
-      });
     
-    const importe = document.getElementById("cantidad");
-    const valor = importe.value;
+    
+    function calcular(){
+
+        const selectedValueDe = divDe.value;
+        const selectedValueA = divA.value;
+        let valor = importe.value;
+
+        if(selectedValueDe == selectedValueA){
+            result = valor;
+        }
+        else if (selectedValueDe === 'COP' && selectedValueA === 'USD'){
+            result = valor / 4021;  
+        }
+        else if (selectedValueDe === 'USD' && selectedValueA === 'COP'){
+            result = valor * 4021;
+        }
+        else if (selectedValueDe === 'EUR' && selectedValueA === 'COP') {
+            result = valor * 4700;
+        }
+        else if (selectedValueDe === 'COP' && selectedValueA === 'EUR'){
+            result = valor / 4700
+        }
+        else{
+            console.log("incorrecto");
+        }
+        result = parseFloat(result.toFixed(2));
+    }
+    
+    convertir();
+
+
+    divDe.addEventListener('change', calcular);
+    divA.addEventListener('change', calcular);
+    importe.addEventListener('input', calcular);      
     
 }
 convertidorDivisas();
