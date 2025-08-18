@@ -5,31 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor Divisas</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form >
-        <div>
-            <label for="cantidad">Cantidad</label>
-            <input type="number" id="cantidad" />
-        </div>
-        <div>
-            <label for="De">De:</label>
-            <select id="De" name="select"s>
-            </select>
-        </div>
-        <div>
-            <label for="A">A:</label>
-            <select id="A" name="select">
+    <section>
+        <header class="header">
+            <h1 class="title">CONVERSOR DE DIVISAS</h1>
+        </header>
+        <form class="formulario">
+            <div class="cant">
+                <label for="cantidad">CANTIDAD:</label>
+                <input type="number" id="cantidad" />
+            </div>
+            <div class="de">
+                <label for="De">De:</label>
+                <select id="De" name="select"s>
+                </select>
+            </div>
+            <div class="a">
+                <label for="A">A:</label>
+                <select id="A" name="select">
 
-            </select>
-        </div>
-        <div>
-            <button type="button" onclick="convertir()">CONVERTIR</button>
-        </div>
-    </form>
-    <div id="result">
-        <p>Result:</p>
-    </div>
+                </select>
+            </div>
+            <div class="btn">
+                <button type="button" onclick="convertir()">CONVERTIR</button>
+            </div>
+            <div id="result">
+                <p>Result: </p>
+            </div>
+        </form>
+    </section>
     <script src="./proyecto.js"></script>
 </body>
 </html>
