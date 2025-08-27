@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>BookStore</title>
+  <link rel="stylesheets" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/ce6f2ea480.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="bg-[#17355E] h-16 text-white">
+        <div  class="flex h-16 flex-row justify-evenly items-center">
+            <h1 class="font-bold text-3xl tracking-wide">LitVerse</h1>
+            <div class="border-white">
+                <input type="text" placeholder="Search..."/>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <nav>
+                <ul class="flex flex-row justify-between gap-8">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">Stocktaking</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    </header>
+
+    <section class="container-news">
+        <h2 class="flex justify-center font-bold text-3xl tracking-wide">News</h2>
+        <div class="flex flex-wrap justify-evenly gap-8" id="news"></div>
+    </section>
+
+    <section class="modal">
+
+    </section>
+    <script src="script.js"></script>
+</body>

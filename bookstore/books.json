@@ -1,0 +1,50 @@
+[
+    {
+      "title": "Cien años de soledad",
+      "author": "Gabriel García Márquez",
+      "price": 80000,
+      "stock": 5,
+      "info": "Novela emblemática del realismo mágico que narra la historia de la familia Buendía en el pueblo ficticio de Macondo.",
+      "image": "images/book1.jpg" 
+    },
+    {
+      "title": "El amor en los tiempos del cólera",
+      "author": "Gabriel García Márquez",
+      "price": 75000,
+      "stock": 4,
+      "info": "Relato de un amor perseverante que atraviesa décadas, ambientado en el Caribe colombiano.",
+      "image": "images/book2.jpg"
+    },
+    {
+      "title": "La sombra del viento",
+      "author": "Carlos Ruiz Zafón",
+      "price": 68000,
+      "stock": 6,
+      "info": "Thriller literario ambientado en la Barcelona de posguerra, lleno de misterio, pasión y libros prohibidos.",
+      "image": "images/book3.jpg"
+    },
+    {
+      "title": "Pedro Páramo",
+      "author": "Juan Rulfo",
+      "price": 55000,
+      "stock": 2,
+      "info": "Novela corta considerada obra maestra de la literatura mexicana, que mezcla realismo y elementos fantasmales.",
+      "image": "images/book4.jpg"
+    },
+    {
+      "title": "Rayuela",
+      "author": "Julio Cortázar",
+      "price": 70000,
+      "stock": 4,
+      "info": "Novela experimental que permite varias formas de lectura, considerada una de las obras más innovadoras del siglo XX.",
+      "image": "images/book5.jpg"
+    },
+    {
+      "title": "Don Quijote de la Mancha",
+      "author": "Miguel de Cervantes",
+      "price": 95000,
+      "stock": 1,
+      "info": "La gran novela de caballerías que satiriza la sociedad de su tiempo, considerada la primera novela moderna.",
+      "image": "images/book6.jpg"
+    }
+  ]
